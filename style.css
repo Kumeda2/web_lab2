@@ -26,7 +26,6 @@ a {
     display: grid;
     grid-template-rows: 15vh 5vh 60vh 20vh;
     grid-template-columns: 20% 60% 20%;
-    flex-direction: column;
 }
 
 .footer {
@@ -69,9 +68,9 @@ a {
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 3;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
+    justify-items: center;
     font-size: 1.2rem;
 }
 
@@ -83,8 +82,8 @@ a {
 .header {
     grid-column-start: 2;
     grid-column-end: 4;
-    display: flex;
-    justify-content: right;
+    display: grid;
+    justify-items: end;
     background: #04202C;
     height: 100%;
     font-size: 1rem;
@@ -95,9 +94,7 @@ a {
 .logo-holder {
     background: #d4dad4;
     height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     padding: 0 4px;
     cursor: pointer;
     color: #04202C;
@@ -118,14 +115,13 @@ a {
     height: 65vh;
     background: #5B7065;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
     text-align: justify;
     padding: 1rem;
     font-size: 1rem;
     overflow-y: auto; 
-    word-wrap: break-word;
     overflow-wrap: break-word;
     scrollbar-width: none;
 }
@@ -136,26 +132,28 @@ a {
     width: 100%;
     background: #C9D1C8;
     height: 100%;
-    display: flex;
+    display: grid;
     font-size: 1rem;
     padding-right: 1rem;
-    justify-content: right;
+    justify-items: right;
     align-items: center;
+}
+
+.title-section h3 {
+    margin: 0;
 }
 
 .content-section {
     grid-column: 2;
     grid-row: 3;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     padding: 1rem;
     font-size: 1rem;
     text-align: justify;
     overflow-y: auto; 
     overflow-x: hidden;
-    word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
     scrollbar-width: none;
@@ -209,8 +207,6 @@ a {
     }
 
     .contact-info {
-        display: flex;
-        flex-direction: column;
         gap: 1px;
     }
 }
