@@ -148,7 +148,7 @@ a {
     grid-row: 3;
     height: 100%;
     display: grid;
-    justify-items: center;
+    align-items: center;
     padding: 1rem;
     font-size: 1rem;
     text-align: justify;
@@ -232,14 +232,5 @@ a {
     .sider {
         font-size: 0.4rem;
         padding: 5px;
-    }
-
-    .slider {
-        padding: 5px;
-    }
-
-    .img-holder {
-        width: 10rem;
-        height: 5rem;
     }
 }
